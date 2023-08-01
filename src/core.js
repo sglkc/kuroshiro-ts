@@ -7,6 +7,22 @@ import {
     kanaToHiragna, kanaToKatakana, kanaToRomaji
 } from "./util";
 
+const Util = {
+    isHiragana,
+    isKatakana,
+    isKana,
+    isKanji,
+    isJapanese,
+    hasHiragana,
+    hasKatakana,
+    hasKana,
+    hasKanji,
+    hasJapanese,
+    kanaToHiragna,
+    kanaToKatakana,
+    kanaToRomaji
+};
+
 /**
  * Kuroshiro Class
  */
@@ -17,6 +33,7 @@ class Kuroshiro {
      */
     constructor() {
         this._analyzer = null;
+        this.Util = Util;
     }
 
     /**
@@ -278,22 +295,6 @@ class Kuroshiro {
         }
     }
 }
-
-const Util = {
-    isHiragana,
-    isKatakana,
-    isKana,
-    isKanji,
-    isJapanese,
-    hasHiragana,
-    hasKatakana,
-    hasKana,
-    hasKanji,
-    hasJapanese,
-    kanaToHiragna,
-    kanaToKatakana,
-    kanaToRomaji
-};
 
 Kuroshiro.Util = Util;
 
