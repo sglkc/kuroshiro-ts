@@ -22,12 +22,12 @@ components
 coverage
 
 # Generated files
-dist/*
-lib/*
+#dist/*
+#lib/*
 
 # Others
 .DS_Store
-package-lock.json
+# package-lock.json bruh
 *.map
 docs
 tmp
