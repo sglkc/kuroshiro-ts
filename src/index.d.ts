@@ -13,7 +13,7 @@ declare class Kuroshiro {
       delimiter_end?: string;
     }
   ): Promise<string>;
-  Util: {
+  static Util: {
     isHiragana: (ch: string) => boolean;
     isKatakana: (ch: string) => boolean;
     isKana: (ch: string) => boolean;
@@ -31,8 +31,9 @@ declare class Kuroshiro {
       system: "nippon" | "passport" | "hepburn"
     ) => string;
   };
+  Util: Kuroshiro["Util"]
 }
 
-declare module "kuroshiro" {
+declare module "@sglkc/kuroshiro" {
   export = Kuroshiro;
 }

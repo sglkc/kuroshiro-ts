@@ -1,6 +1,6 @@
 {
   "name": "@sglkc/kuroshiro",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Forked version of kuroshiro with TypeScript support",
   "main": "lib/index.js",
   "module": "src/index.js",
